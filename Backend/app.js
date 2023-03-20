@@ -4,7 +4,7 @@ const fs=require('fs')
 const path=require('path')
 
 const mongoose=require('mongoose')
-mongoose.connect('mongodb+srv://amardeep033:0307Amar@cluster0.4yoz0.mongodb.net/mern?retryWrites=true&w=majority',{useNewUrlParser:true})
+mongoose.connect('mongodb+srv://amardeep033:<password>@cluster0.4yoz0.mongodb.net/mern?retryWrites=true&w=majority',{useNewUrlParser:true})
 const db=mongoose.connection
 db.on('error',error=>console.log(error))
 db.once('open',()=>console.log('Connected'))
